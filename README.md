@@ -30,12 +30,6 @@ Flight Connect: is a simple app to connect people from the same flight with each
 
 - [ ] User creates a new account
 
-
-- [ ] User adds a new task and edit previously saved tasks
-- [ ] User receives notifications about upcoming tasks
-- [ ] User can add pictures with tasks and add locations of tasks 
-- [ ] Settings (Reminders, account, sharing)
-
 **Optional Nice-to-have Stories**
 
 - [ ] Recently deleted tasks
@@ -77,7 +71,7 @@ Flight Connect: is a simple app to connect people from the same flight with each
    
 
 ## Wireframes
-
+![prototype](https://user-images.githubusercontent.com/32272045/95660586-8a141c00-0aee-11eb-9fb6-e5f5ff75a77d.gif)
 
 
 
