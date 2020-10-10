@@ -29,27 +29,20 @@ Flight Connect: is a simple app to connect people from the same flight with each
 **Required Must-have Stories**
 
 - [ ] User creates a new account
+- [ ] User sets up interests
+- [ ] User messages other users
 
 **Optional Nice-to-have Stories**
-
-- [ ] Recently deleted tasks
-- [ ] Starred/Favorited tasks 
-- [ ] Optionally color task background color
-- [ ] Separate section for tasks planned for "Today"
 - [ ] Dark Mode
 
 ### 2. Screen Archetypes *screens our app will need to function*
 
 * Login Screen
     * User can login
-* Registration Screen
-    * User can create a new task 
-* Task Creation Screen
-    * User can add a new task
-* Task Edit Screen
-    * User can edit a pre-existing task
-* Task Overview Screen
-    * User can view previously completed tasks
+* Interests Screen
+    * User can pick interests 
+* User Connection Screen
+    * User can connect with other uses
 
 ### 3. Navigation
 
@@ -61,13 +54,11 @@ Flight Connect: is a simple app to connect people from the same flight with each
 **Flow Navigation** (Screen to Screen) *Screens that our archetypes will navigate to once an action is completed*
 * Login Screen
  -> Home
-* Registration Screen
+* Interest Screen
  -> Home
-* Task Creation Screen
- -> Home (after adding a new task)
-    * Will need multiple screens to represent what happens if user chooses options to add photos and location with tasks
-* Task Edit Screen 
- -> Home
+* User Connection Screen
+ -> Home (after chatting)
+ 
    
 
 ## Wireframes
