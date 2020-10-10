@@ -13,9 +13,12 @@
 		C0B4B573253164AD00504970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B4B571253164AD00504970 /* Main.storyboard */; };
 		C0B4B575253164B400504970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B4B574253164B400504970 /* Assets.xcassets */; };
 		C0B4B578253164B400504970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B4B576253164B400504970 /* LaunchScreen.storyboard */; };
+		DD126A7BF792A787BF40D62D /* Pods_Flight_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433B7DF3B9C491C24B247399 /* Pods_Flight_Connect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A729700C3CB5827C2A8A8F8 /* Pods-Flight Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Connect.release.xcconfig"; path = "Target Support Files/Pods-Flight Connect/Pods-Flight Connect.release.xcconfig"; sourceTree = "<group>"; };
+		433B7DF3B9C491C24B247399 /* Pods_Flight_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flight_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B4B568253164AD00504970 /* Flight Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flight Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B4B56B253164AD00504970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B4B56D253164AD00504970 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C0B4B574253164B400504970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0B4B577253164B400504970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0B4B579253164B400504970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C484CDBB72A984C35B7BF8EE /* Pods-Flight Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Connect.debug.xcconfig"; path = "Target Support Files/Pods-Flight Connect/Pods-Flight Connect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD126A7BF792A787BF40D62D /* Pods_Flight_Connect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B4E04511CE1AFA90F18584 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				433B7DF3B9C491C24B247399 /* Pods_Flight_Connect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B0FD9B703208C12A8A60305 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C484CDBB72A984C35B7BF8EE /* Pods-Flight Connect.debug.xcconfig */,
+				2A729700C3CB5827C2A8A8F8 /* Pods-Flight Connect.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C0B4B55F253164AD00504970 = {
 			isa = PBXGroup;
 			children = (
 				C0B4B56A253164AD00504970 /* Flight Connect */,
 				C0B4B569253164AD00504970 /* Products */,
+				2B0FD9B703208C12A8A60305 /* Pods */,
+				18B4E04511CE1AFA90F18584 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0B4B57C253164B400504970 /* Build configuration list for PBXNativeTarget "Flight Connect" */;
 			buildPhases = (
+				A11EDEC6834A52A16213D2C5 /* [CP] Check Pods Manifest.lock */,
 				C0B4B564253164AD00504970 /* Sources */,
 				C0B4B565253164AD00504970 /* Frameworks */,
 				C0B4B566253164AD00504970 /* Resources */,
+				554A0AF065A2DBF239B44879 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554A0AF065A2DBF239B44879 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flight Connect/Pods-Flight Connect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flight Connect/Pods-Flight Connect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flight Connect/Pods-Flight Connect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11EDEC6834A52A16213D2C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flight Connect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0B4B564253164AD00504970 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C0B4B57D253164B400504970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C484CDBB72A984C35B7BF8EE /* Pods-Flight Connect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		C0B4B57E253164B400504970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A729700C3CB5827C2A8A8F8 /* Pods-Flight Connect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
